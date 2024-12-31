@@ -226,11 +226,8 @@ namespace Colossal
                 GorillaTagger.Instance.offlineVRRig.enabled = false;
 
 
-            if (PhotonNetwork.InRoom)
-            {
-                previousSerializationRate = PhotonNetwork.SerializationRate; // More movement show up server sided
-                PhotonNetwork.SerializationRate = 3;
-            }
+            previousSerializationRate = PhotonNetwork.SerializationRate; // More movement show up server sided
+            PhotonNetwork.SerializationRate *= 3;
 
 
             previousPos = GorillaTagger.Instance.transform.position; // Saving position to return to
@@ -284,6 +281,10 @@ namespace Colossal
                 EnableCosmetics();
 
 
+                if (previousSerializationRate > 0)
+                    PhotonNetwork.SerializationRate = previousSerializationRate;
+
+
                 animator.Play("idle");
 
                 AssetBundleLoader.audioSource.Stop();
@@ -330,7 +331,7 @@ namespace Colossal
                 if (Menu.activeSelf)
                     Menu.SetActive(false); // Toggle the menu visibility
 
-                if(!CurrentViewingMenu[SelectedOptionIndex].submenu)
+                if (!CurrentViewingMenu[SelectedOptionIndex].submenu)
                     Emote(CurrentViewingMenu[SelectedOptionIndex].Name.Replace(" ", "").ToLower()); // Dynamically play emotes based off the name shown on the menu. If you want to add more emotes make sure the animation state name is lowercase and is the same as shown on the menu
                 else
                 {
@@ -343,7 +344,7 @@ namespace Colossal
                             SelectedOptionIndex = 0;  // Optionally reset the selected index when changing pages
                         }
                     }
-                    else if(CurrentViewingMenu[SelectedOptionIndex].Name.Contains("<"))
+                    else if (CurrentViewingMenu[SelectedOptionIndex].Name.Contains("<"))
                     {
                         if (currentPage > 0)
                         {
