@@ -8,10 +8,17 @@ IIDK emote wheel was becoming really popular, and it was programmed like complet
 - B (Select Emote)
 - V (Stop Emote)
 - Scroll Wheel
+(Flying)
+- WASD
+- Space (Up)
+- Control (Down)
 ### VR
 - Right Trigger (Select Emote)
 - Left Trigger (Stop Emote)
-- Joystick
+- Right Joystick
+(Flying)
+- Left Joystick (X, Z)
+- Right Joystick (Y)
 
 # Install
 Download the latest release
