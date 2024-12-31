@@ -8,7 +8,7 @@ IIDK emote wheel was becoming really popular, and it was programmed like complet
 - B (Select Emote)
 - V (Stop Emote)
 - Scroll Wheel
-(Flying)
+### Freecam
 - WASD
 - Space (Up)
 - Control (Down)
@@ -16,7 +16,7 @@ IIDK emote wheel was becoming really popular, and it was programmed like complet
 - Right Trigger (Select Emote)
 - Left Trigger (Stop Emote)
 - Right Joystick
-(Flying)
+### Freecam
 - Left Joystick (X, Z)
 - Right Joystick (Y)
 
