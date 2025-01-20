@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="AssetBundle\colossalemotes" />
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Include="AssetBundle\colossalemotes" />
   </ItemGroup>
 
@@ -13,7 +17,7 @@
       <HintPath>..\..\gtag depend\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\gtag depend\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Gorilla Tag\Gorilla Tag_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx">
       <HintPath>..\..\gtag depend\BepInEx.dll</HintPath>

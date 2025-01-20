@@ -32,12 +32,13 @@ namespace Colossal
         public static GameObject Menu;
         public static Text menuText;
         public static MenuOption[] CurrentViewingMenu = null;
-        public static MenuOption[][] Pages = new MenuOption[7][];  // An array to hold all pages
+        public static MenuOption[][] Pages = new MenuOption[8][];  // An array to hold all pages
         public static MenuOption[] Page1 = null;
         public static MenuOption[] Page2 = null;
         public static MenuOption[] Page3 = null;
         public static MenuOption[] Page4 = null;
         public static MenuOption[] Page5 = null;
+        public static MenuOption[] Page6 = null;
         public static int SelectedOptionIndex = 0;
         public static int currentPage = 0;
 
@@ -87,26 +88,26 @@ namespace Colossal
             Page1[3] = new MenuOption { Name = "Lucid Dreams" };
             Page1[4] = new MenuOption { Name = "Empty Out Your Pockets" };
             Page1[5] = new MenuOption { Name = "Scenario" };
-            Page1[6] = new MenuOption { Name = "Jabba Switch Way" };
+            Page1[6] = new MenuOption { Name = "Caffeinated" };
             Page1[7] = new MenuOption { Name = "Smooth Moves" };
             Page1[8] = new MenuOption { Name = "Cupids Arrow" };
-            Page1[9] = new MenuOption { Name = "Pull Up" };
-            Page1[10] = new MenuOption { Name = "Poki" };
-            Page1[11] = new MenuOption { Name = "Star Power" };
+            Page1[9] = new MenuOption { Name = "California Gurls" };
+            Page1[10] = new MenuOption { Name = "Miku Miku Beam" };
+            Page1[11] = new MenuOption { Name = "Miku Live" };
 
             Page2 = new MenuOption[12];
             Page2[0] = new MenuOption { Name = "--->", submenu = true };
             Page2[1] = new MenuOption { Name = "<---", submenu = true };
             Page2[2] = new MenuOption { Name = "Gangnam Style" };
             Page2[3] = new MenuOption { Name = "Never Gonna" };
-            Page2[4] = new MenuOption { Name = "Billy Bounce" };
+            Page2[4] = new MenuOption { Name = "Jabba Switch Way" };
             Page2[5] = new MenuOption { Name = "Macarena" };
             Page2[6] = new MenuOption { Name = "Floss" };
             Page2[7] = new MenuOption { Name = "Paws And Claws" };
             Page2[8] = new MenuOption { Name = "Day Dream" };
             Page2[9] = new MenuOption { Name = "Renegade" };
-            Page2[10] = new MenuOption { Name = "Blinding Lights" };
-            Page2[11] = new MenuOption { Name = "Boys A Liar" };
+            Page2[10] = new MenuOption { Name = "Evil Plan" };
+            Page2[11] = new MenuOption { Name = "Star Power" };
 
             Page3 = new MenuOption[12];
             Page3[0] = new MenuOption { Name = "--->", submenu = true };
@@ -137,18 +138,30 @@ namespace Colossal
             Page4[11] = new MenuOption { Name = "Flapper" };
 
             Page5 = new MenuOption[12];
-            Page5[0] = new MenuOption { Name = "<---", submenu = true };
-            Page5[1] = new MenuOption { Name = "Electro Shuffle" };
-            Page5[2] = new MenuOption { Name = "Dance Moves" };
-            Page5[3] = new MenuOption { Name = "Break Neck" };
-            Page5[4] = new MenuOption { Name = "Breakin" };
-            Page5[5] = new MenuOption { Name = "Crack Down" };
-            Page5[6] = new MenuOption { Name = "Groove Jam" };
-            Page5[7] = new MenuOption { Name = "Robot" };
-            Page5[8] = new MenuOption { Name = "Disco Fever" };
-            Page5[9] = new MenuOption { Name = "Boneless" };
-            Page5[10] = new MenuOption { Name = "Back Stroke" };
-            Page5[11] = new MenuOption { Name = "Clean Groove" };
+            Page5[0] = new MenuOption { Name = "--->", submenu = true };
+            Page5[1] = new MenuOption { Name = "<---", submenu = true };
+            Page5[2] = new MenuOption { Name = "Electro Shuffle" };
+            Page5[3] = new MenuOption { Name = "Dance Moves" };
+            Page5[4] = new MenuOption { Name = "Break Neck" };
+            Page5[5] = new MenuOption { Name = "Breakin" };
+            Page5[6] = new MenuOption { Name = "Crack Down" };
+            Page5[7] = new MenuOption { Name = "Groove Jam" };
+            Page5[8] = new MenuOption { Name = "Robot" };
+            Page5[9] = new MenuOption { Name = "Disco Fever" };
+            Page5[10] = new MenuOption { Name = "Boneless" };
+            Page5[11] = new MenuOption { Name = "Back Stroke" };
+
+            Page6 = new MenuOption[10];
+            Page6[0] = new MenuOption { Name = "<---", submenu = true };
+            Page6[1] = new MenuOption { Name = "Clean Groove" };
+            Page6[2] = new MenuOption { Name = "Blinding Lights" };
+            Page6[3] = new MenuOption { Name = "Distraction" };
+            Page6[4] = new MenuOption { Name = "Chicken Wing" };
+            Page6[5] = new MenuOption { Name = "Break Down" };
+            Page6[6] = new MenuOption { Name = "Poki" };
+            Page6[7] = new MenuOption { Name = "Pull Up" };
+            Page6[8] = new MenuOption { Name = "JumpStyle" };
+            Page6[9] = new MenuOption { Name = "Billy Bounce" };
 
 
             Pages[0] = Page1;
@@ -156,6 +169,7 @@ namespace Colossal
             Pages[2] = Page3;
             Pages[3] = Page4;
             Pages[4] = Page5;
+            Pages[5] = Page6;
             CurrentViewingMenu = Pages[0]; // Starting on the first page
         }
         public void Update()
