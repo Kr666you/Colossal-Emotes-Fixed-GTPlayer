@@ -81,7 +81,7 @@ namespace Colossal
 
 
             // Adding options to the menu
-            Page1 = new MenuOption[12];
+            Page1 = new MenuOption[13];
             Page1[0] = new MenuOption { Name = "--->", submenu = true };
             Page1[1] = new MenuOption { Name = "All I Want Is You" }; // This is totally a fortnite emote
             Page1[2] = new MenuOption { Name = "Griddy" };
@@ -89,25 +89,26 @@ namespace Colossal
             Page1[4] = new MenuOption { Name = "Empty Out Your Pockets" };
             Page1[5] = new MenuOption { Name = "Scenario" };
             Page1[6] = new MenuOption { Name = "Caffeinated" };
-            Page1[7] = new MenuOption { Name = "Smooth Moves" };
-            Page1[8] = new MenuOption { Name = "Cupids Arrow" };
+            Page1[7] = new MenuOption { Name = "Miss The Rage" };
+            Page1[8] = new MenuOption { Name = "Tek It" };
             Page1[9] = new MenuOption { Name = "California Gurls" };
             Page1[10] = new MenuOption { Name = "Miku Miku Beam" };
             Page1[11] = new MenuOption { Name = "Miku Live" };
+            Page1[12] = new MenuOption { Name = "Vegetable Juice" };
 
             Page2 = new MenuOption[12];
             Page2[0] = new MenuOption { Name = "--->", submenu = true };
             Page2[1] = new MenuOption { Name = "<---", submenu = true };
             Page2[2] = new MenuOption { Name = "Gangnam Style" };
             Page2[3] = new MenuOption { Name = "Never Gonna" };
-            Page2[4] = new MenuOption { Name = "Jabba Switch Way" };
+            Page2[4] = new MenuOption { Name = "Feel Like God" };
             Page2[5] = new MenuOption { Name = "Macarena" };
-            Page2[6] = new MenuOption { Name = "Floss" };
+            Page2[6] = new MenuOption { Name = "Cupids Arrow" };
             Page2[7] = new MenuOption { Name = "Paws And Claws" };
-            Page2[8] = new MenuOption { Name = "Day Dream" };
+            Page2[8] = new MenuOption { Name = "Jabba Switch Way" };
             Page2[9] = new MenuOption { Name = "Renegade" };
             Page2[10] = new MenuOption { Name = "Evil Plan" };
-            Page2[11] = new MenuOption { Name = "Star Power" };
+            Page2[11] = new MenuOption { Name = "Smooth Moves" };
 
             Page3 = new MenuOption[12];
             Page3[0] = new MenuOption { Name = "--->", submenu = true };
@@ -151,7 +152,7 @@ namespace Colossal
             Page5[10] = new MenuOption { Name = "Boneless" };
             Page5[11] = new MenuOption { Name = "Back Stroke" };
 
-            Page6 = new MenuOption[10];
+            Page6 = new MenuOption[13];
             Page6[0] = new MenuOption { Name = "<---", submenu = true };
             Page6[1] = new MenuOption { Name = "Clean Groove" };
             Page6[2] = new MenuOption { Name = "Blinding Lights" };
@@ -162,6 +163,9 @@ namespace Colossal
             Page6[7] = new MenuOption { Name = "Pull Up" };
             Page6[8] = new MenuOption { Name = "JumpStyle" };
             Page6[9] = new MenuOption { Name = "Billy Bounce" };
+            Page6[10] = new MenuOption { Name = "Star Power" };
+            Page6[11] = new MenuOption { Name = "Floss" };
+            Page6[12] = new MenuOption { Name = "Day Dream" };
 
 
             Pages[0] = Page1;

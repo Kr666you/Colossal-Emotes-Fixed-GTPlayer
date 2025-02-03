@@ -13,4 +13,13 @@ namespace Colossal.Patches
             return !(__instance == GorillaTagger.Instance.offlineVRRig);
         }
     }
+
+    [HarmonyPatch(typeof(VRRigJobManager), "DeregisterVRRig", MethodType.Normal)]
+    public static class DisableRigBypass
+    {
+        public static bool Prefix()
+        {
+            return false;
+        }
+    }
 }
