@@ -20,6 +20,7 @@ IIDK emote wheel was becoming really popular, and it was programmed like complet
 - Left Joystick (X, Z)
 - Right Joystick (Y)
 
-# Install
-Download the latest release
-Drag the file ColossalEmotes.dll to your plugins folder
+# Install (PLEASE READ, YOU MIGHT GET BANNED)
+### If you are using a mod menu or another mod that uses the bypass to disable your offline vrrig
+Download the NOBYPASS dll. If you are using 2 mods that both use the bypass your game will crash.
+### If not, download the regular one
