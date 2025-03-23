@@ -190,8 +190,8 @@ namespace Colossal
                         if (emoting) // Only run during a emote
                         {
                             // Making you float
-                            GorillaLocomotion.Player.Instance.bodyCollider.attachedRigidbody.velocity = Vector3.zero;
-                            GorillaLocomotion.Player.Instance.bodyCollider.attachedRigidbody.AddForce(-Physics.gravity, ForceMode.Acceleration);
+                            GorillaLocomotion.GTPlayer.Instance.bodyCollider.attachedRigidbody.velocity = Vector3.zero;
+                            GorillaLocomotion.GTPlayer.Instance.bodyCollider.attachedRigidbody.AddForce(-Physics.gravity, ForceMode.Acceleration);
 
 
                             // Enables freecam
